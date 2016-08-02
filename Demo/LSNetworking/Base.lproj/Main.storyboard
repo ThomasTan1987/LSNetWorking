@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8mH-4J-faG">
+                                <rect key="frame" x="83" y="28" width="264" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Consultant/GetCashSettlements" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="enk-G8-eBg">
+                                <rect key="frame" x="83" y="75" width="268" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="host" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sww-UF-93M">
+                                <rect key="frame" x="30" y="32" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="path" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8VX-sS-Xvk">
+                                <rect key="frame" x="30" y="79" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnx-99-EBs">
+                                <rect key="frame" x="291" y="132" width="60" height="30"/>
+                                <state key="normal" title="发送请求"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fnx-99-EBs" firstAttribute="trailing" secondItem="enk-G8-eBg" secondAttribute="trailing" id="2gv-Of-4pX"/>
+                            <constraint firstItem="fnx-99-EBs" firstAttribute="top" secondItem="enk-G8-eBg" secondAttribute="bottom" constant="27" id="9XT-VZ-Das"/>
+                            <constraint firstItem="8mH-4J-faG" firstAttribute="leading" secondItem="Sww-UF-93M" secondAttribute="trailing" constant="19" id="B9d-EC-njD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="enk-G8-eBg" secondAttribute="trailing" constant="8" id="Ce9-he-sLY"/>
+                            <constraint firstItem="Sww-UF-93M" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="MMx-ac-sr7"/>
+                            <constraint firstItem="8mH-4J-faG" firstAttribute="centerY" secondItem="Sww-UF-93M" secondAttribute="centerY" id="OlF-Hq-keA"/>
+                            <constraint firstItem="Sww-UF-93M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="Prn-iG-myQ"/>
+                            <constraint firstAttribute="trailing" secondItem="8mH-4J-faG" secondAttribute="trailing" constant="28" id="XNa-Vc-OfU"/>
+                            <constraint firstItem="enk-G8-eBg" firstAttribute="centerY" secondItem="8VX-sS-Xvk" secondAttribute="centerY" id="fPa-Fx-EA9"/>
+                            <constraint firstItem="enk-G8-eBg" firstAttribute="leading" secondItem="8mH-4J-faG" secondAttribute="leading" id="j0x-As-yCK"/>
+                            <constraint firstItem="8VX-sS-Xvk" firstAttribute="centerX" secondItem="Sww-UF-93M" secondAttribute="centerX" id="pxN-iM-01h"/>
+                            <constraint firstItem="8mH-4J-faG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="srs-sF-gl0"/>
+                            <constraint firstItem="8VX-sS-Xvk" firstAttribute="top" secondItem="Sww-UF-93M" secondAttribute="bottom" constant="26" id="uFt-Tq-fue"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274.5" y="429.5"/>
+        </scene>
+    </scenes>
+</document>
