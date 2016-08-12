@@ -14,7 +14,6 @@
 		E692641A1D4F00E500E18ADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69264181D4F00E500E18ADE /* Main.storyboard */; };
 		E692641C1D4F00E500E18ADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E692641B1D4F00E500E18ADE /* Assets.xcassets */; };
 		E692641F1D4F00E500E18ADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E692641D1D4F00E500E18ADE /* LaunchScreen.storyboard */; };
-		E69264291D4F19E300E18ADE /* LSNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E69264281D4F19E300E18ADE /* LSNetworking.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +30,6 @@
 		E692641B1D4F00E500E18ADE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E692641E1D4F00E500E18ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E69264201D4F00E500E18ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E69264271D4F19E300E18ADE /* LSNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNetworking.h; sourceTree = "<group>"; };
-		E69264281D4F19E300E18ADE /* LSNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNetworking.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +82,6 @@
 		E692640E1D4F00E500E18ADE /* LSNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				E69264261D4F19C400E18ADE /* LSNetworking */,
 				E69264121D4F00E500E18ADE /* AppDelegate.h */,
 				E69264131D4F00E500E18ADE /* AppDelegate.m */,
 				E69264151D4F00E500E18ADE /* ViewController.h */,
@@ -105,16 +101,6 @@
 				E69264101D4F00E500E18ADE /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E69264261D4F19C400E18ADE /* LSNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				E69264271D4F19E300E18ADE /* LSNetworking.h */,
-				E69264281D4F19E300E18ADE /* LSNetworking.m */,
-			);
-			name = LSNetworking;
-			path = ../../LSNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,7 +224,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E69264291D4F19E300E18ADE /* LSNetworking.m in Sources */,
 				E69264171D4F00E500E18ADE /* ViewController.m in Sources */,
 				E69264141D4F00E500E18ADE /* AppDelegate.m in Sources */,
 				E69264111D4F00E500E18ADE /* main.m in Sources */,

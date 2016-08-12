@@ -6,5 +6,5 @@ target 'LSNetworking' do
   # use_frameworks!
 
   # Pods for LSNetworking
-
+  pod 'LSNetworking', :path => '../'
 end

@@ -7,41 +7,97 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B66A652FD51A8ACE9FBDC6AA93F72B8 /* Pods-LSNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88678D4FBE9BCA3470D7F5E6A03A7DE8 /* Pods-LSNetworking-dummy.m */; };
-		DEAA8EBF139A400203AACDF0866156D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		3895892EC473C3BC8EA9248C67A20BD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		50C06A80E34D6BCD948F50B62A050CF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		82F1979484A6431EBA71217ED60FFDF6 /* Pods-LSNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88678D4FBE9BCA3470D7F5E6A03A7DE8 /* Pods-LSNetworking-dummy.m */; };
+		8C916BEE54DFA0360D345BC670AA3B0F /* LSNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DF4234426265A81AA6083B34EC7B23 /* LSNetworking.m */; };
+		9BDCCC8C4D92A9A969F752B71E9660AB /* LSNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD335DB8216CAF42818D9B09C49BC55E /* LSNetworking-dummy.m */; };
+		C66CE42442867758A114657636C9D3FC /* LSNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DE1A5A2F182A19E85F1952EF2145E3 /* LSNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7F51F58D32902CB5C893B650BE303BCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7D00A1EEC994C2797CDAE10EEC00E0E;
+			remoteInfo = LSNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0F58E5912BB65726405389EA6BF42DF8 /* LSNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LSNetworking.xcconfig; sourceTree = "<group>"; };
+		1892BDCD479F952FFF3A03A5C94A0153 /* LSNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LSNetworking-prefix.pch"; sourceTree = "<group>"; };
 		36FB6F0F4157BF3EDEC445937F3BE831 /* Pods-LSNetworking-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LSNetworking-acknowledgements.plist"; sourceTree = "<group>"; };
 		394783B38DCC8993B845A221CE96DE3B /* Pods-LSNetworking-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LSNetworking-resources.sh"; sourceTree = "<group>"; };
 		4180A4ADE05E405363CA0A39157788A9 /* Pods-LSNetworking-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LSNetworking-frameworks.sh"; sourceTree = "<group>"; };
-		516DD38FBB07022F77A026635D17B949 /* libPods-LSNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LSNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60DE1A5A2F182A19E85F1952EF2145E3 /* LSNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LSNetworking.h; sourceTree = "<group>"; };
+		62B91B436BE0BBF7E890DEC237880E1D /* libLSNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLSNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		88678D4FBE9BCA3470D7F5E6A03A7DE8 /* Pods-LSNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LSNetworking-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4DF4234426265A81AA6083B34EC7B23 /* LSNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LSNetworking.m; sourceTree = "<group>"; };
 		BD18D3675375B1D409A8A54957786675 /* Pods-LSNetworking-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LSNetworking-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CCF9CA515CEFE44ACD56E2BEFD1E1C87 /* libPods-LSNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LSNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F8CDAC78188B55A435F15FC250017CD2 /* Pods-LSNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LSNetworking.release.xcconfig"; sourceTree = "<group>"; };
 		F9C81703148D8D366BD2EE50BDDE9F8B /* Pods-LSNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LSNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		FD335DB8216CAF42818D9B09C49BC55E /* LSNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LSNetworking-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2EFC52CB6541C64DFD8F1EA37D3C9CB4 /* Frameworks */ = {
+		4D7CF1611E509DFD293D5A21F0B0DBEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEAA8EBF139A400203AACDF0866156D3 /* Foundation.framework in Frameworks */,
+				3895892EC473C3BC8EA9248C67A20BD5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86A6E36421C531352EE0E4E090FE3E16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C06A80E34D6BCD948F50B62A050CF2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		151BA48F18AAECE0FF0B1D5342EFE23A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A90F6AE3C4DD9F728628713701C6C729 /* LSNetworking */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		58797F33AF97D634D7FCA3BDC81B1EBC /* LSNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				60DE1A5A2F182A19E85F1952EF2145E3 /* LSNetworking.h */,
+				A4DF4234426265A81AA6083B34EC7B23 /* LSNetworking.m */,
+			);
+			path = LSNetworking;
+			sourceTree = "<group>";
+		};
+		620540D7CF688FC230C1F4FC42E7D222 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F58E5912BB65726405389EA6BF42DF8 /* LSNetworking.xcconfig */,
+				FD335DB8216CAF42818D9B09C49BC55E /* LSNetworking-dummy.m */,
+				1892BDCD479F952FFF3A03A5C94A0153 /* LSNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Demo/Pods/Target Support Files/LSNetworking";
 			sourceTree = "<group>";
 		};
 		62153A316951521EC0770347E458F432 /* Pods-LSNetworking */ = {
@@ -71,10 +127,30 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				151BA48F18AAECE0FF0B1D5342EFE23A /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				DD55969A4A59E8C35B178E6A57699B5E /* Products */,
+				AD5B3BF0FAD2CC34FDAC978705CC4DD9 /* Products */,
 				71312502610470F64D09E57552F65265 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		A90F6AE3C4DD9F728628713701C6C729 /* LSNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				58797F33AF97D634D7FCA3BDC81B1EBC /* LSNetworking */,
+				620540D7CF688FC230C1F4FC42E7D222 /* Support Files */,
+			);
+			name = LSNetworking;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		AD5B3BF0FAD2CC34FDAC978705CC4DD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62B91B436BE0BBF7E890DEC237880E1D /* libLSNetworking.a */,
+				CCF9CA515CEFE44ACD56E2BEFD1E1C87 /* libPods-LSNetworking.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -85,31 +161,52 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DD55969A4A59E8C35B178E6A57699B5E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				516DD38FBB07022F77A026635D17B949 /* libPods-LSNetworking.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		0BECD666473FBABA75CF756AB17C3636 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C66CE42442867758A114657636C9D3FC /* LSNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		5682926D6454453E3E1ACD52D64A7748 /* Pods-LSNetworking */ = {
+		979B31262B7ED132F41870F1D1D17A56 /* Pods-LSNetworking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C7C91963048DAF83B294B0C397F385A /* Build configuration list for PBXNativeTarget "Pods-LSNetworking" */;
+			buildConfigurationList = 80427FA5F704AA0FF552C9DB87DB1172 /* Build configuration list for PBXNativeTarget "Pods-LSNetworking" */;
 			buildPhases = (
-				FB887C957FFD51B1B3DF8DAE81F70C2E /* Sources */,
-				2EFC52CB6541C64DFD8F1EA37D3C9CB4 /* Frameworks */,
+				91F122623AA01E4A91912CEABBF92575 /* Sources */,
+				86A6E36421C531352EE0E4E090FE3E16 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96E5B9123FA3F186AB3EF2DA729BF01E /* PBXTargetDependency */,
+			);
+			name = "Pods-LSNetworking";
+			productName = "Pods-LSNetworking";
+			productReference = CCF9CA515CEFE44ACD56E2BEFD1E1C87 /* libPods-LSNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A7D00A1EEC994C2797CDAE10EEC00E0E /* LSNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AA5BF76D0167A181E4BFB4C12077B37 /* Build configuration list for PBXNativeTarget "LSNetworking" */;
+			buildPhases = (
+				929FA64A30AFBAAEF926259126CAA789 /* Sources */,
+				4D7CF1611E509DFD293D5A21F0B0DBEB /* Frameworks */,
+				0BECD666473FBABA75CF756AB17C3636 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-LSNetworking";
-			productName = "Pods-LSNetworking";
-			productReference = 516DD38FBB07022F77A026635D17B949 /* libPods-LSNetworking.a */;
+			name = LSNetworking;
+			productName = LSNetworking;
+			productReference = 62B91B436BE0BBF7E890DEC237880E1D /* libLSNetworking.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -129,48 +226,46 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DD55969A4A59E8C35B178E6A57699B5E /* Products */;
+			productRefGroup = AD5B3BF0FAD2CC34FDAC978705CC4DD9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5682926D6454453E3E1ACD52D64A7748 /* Pods-LSNetworking */,
+				A7D00A1EEC994C2797CDAE10EEC00E0E /* LSNetworking */,
+				979B31262B7ED132F41870F1D1D17A56 /* Pods-LSNetworking */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FB887C957FFD51B1B3DF8DAE81F70C2E /* Sources */ = {
+		91F122623AA01E4A91912CEABBF92575 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B66A652FD51A8ACE9FBDC6AA93F72B8 /* Pods-LSNetworking-dummy.m in Sources */,
+				82F1979484A6431EBA71217ED60FFDF6 /* Pods-LSNetworking-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929FA64A30AFBAAEF926259126CAA789 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BDCCC8C4D92A9A969F752B71E9660AB /* LSNetworking-dummy.m in Sources */,
+				8C916BEE54DFA0360D345BC670AA3B0F /* LSNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin XCBuildConfiguration section */
-		2882AFBA2E5B26AA471CA085C4C8D670 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8CDAC78188B55A435F15FC250017CD2 /* Pods-LSNetworking.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
+/* Begin PBXTargetDependency section */
+		96E5B9123FA3F186AB3EF2DA729BF01E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LSNetworking;
+			target = A7D00A1EEC994C2797CDAE10EEC00E0E /* LSNetworking */;
+			targetProxy = 7F51F58D32902CB5C893B650BE303BCB /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
 		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -213,6 +308,27 @@
 			};
 			name = Debug;
 		};
+		8E44662B805A444E76D937280D919110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8CDAC78188B55A435F15FC250017CD2 /* Pods-LSNetworking.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -251,7 +367,7 @@
 			};
 			name = Release;
 		};
-		FEC818375AAD1852C6DEC79638BAF6A7 /* Debug */ = {
+		AB871ACEC2122CF966AC987CDD87BFB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F9C81703148D8D366BD2EE50BDDE9F8B /* Pods-LSNetworking.debug.xcconfig */;
 			buildSettings = {
@@ -272,6 +388,48 @@
 			};
 			name = Debug;
 		};
+		AD014793C4FD168A0DD1C8FDB07FAD63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F58E5912BB65726405389EA6BF42DF8 /* LSNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LSNetworking/LSNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B5B7E459402E9219A558E5AB1A6B56CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F58E5912BB65726405389EA6BF42DF8 /* LSNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LSNetworking/LSNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -284,11 +442,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C7C91963048DAF83B294B0C397F385A /* Build configuration list for PBXNativeTarget "Pods-LSNetworking" */ = {
+		80427FA5F704AA0FF552C9DB87DB1172 /* Build configuration list for PBXNativeTarget "Pods-LSNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FEC818375AAD1852C6DEC79638BAF6A7 /* Debug */,
-				2882AFBA2E5B26AA471CA085C4C8D670 /* Release */,
+				AB871ACEC2122CF966AC987CDD87BFB7 /* Debug */,
+				8E44662B805A444E76D937280D919110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AA5BF76D0167A181E4BFB4C12077B37 /* Build configuration list for PBXNativeTarget "LSNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B7E459402E9219A558E5AB1A6B56CA /* Debug */,
+				AD014793C4FD168A0DD1C8FDB07FAD63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

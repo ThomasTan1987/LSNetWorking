@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: d4971f04ba00dae552da257d367434fdfb59e253
+PODS:
+  - LSNetworking (0.1.0)
+
+DEPENDENCIES:
+  - LSNetworking (from `../`)
+
+EXTERNAL SOURCES:
+  LSNetworking:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LSNetworking: c0f9d5630704bfbef9469e5b1d6d94effd5ea408
+
+PODFILE CHECKSUM: 81ea3a2c9ddc3533cf15ac2586d82592ca16c450
 
 COCOAPODS: 1.0.1

@@ -31,7 +31,7 @@ static LSNetworking *instance = nil;
     }
     return [super alloc];
 }
-#pragma mark - 
+#pragma mark -
 - (void)GET:(NSString *)URLString parameters:(NSDictionary *)parameters success:(SUCCESS)success failure:(FAILURE)failure
 {
     //
@@ -66,7 +66,7 @@ static LSNetworking *instance = nil;
         for (int i=0; i<parameters.allKeys.count; i++) {
             NSString *key = parameters.allKeys[i];
             NSString *value = parameters[key];
-            if (i == 1) {
+            if (i == 0) {
                 [parametersString appendFormat:@"%@=%@",key,value];
             }else{
                 [parametersString appendFormat:@"&%@=%@",key,value];
@@ -77,6 +77,18 @@ static LSNetworking *instance = nil;
     } else if ([method isEqualToString:@"POST"]) {
         self.request.URL = [NSURL URLWithString:finalURLString];
         self.request.HTTPMethod = method;
+        
+        NSMutableString *parametersString = [[NSMutableString alloc] init];
+        for (int i=0; i<parameters.allKeys.count; i++) {
+            NSString *key = parameters.allKeys[i];
+            NSString *value = parameters[key];
+            if (i == 0) {
+                [parametersString appendFormat:@"%@=%@",key,value];
+            }else{
+                [parametersString appendFormat:@"&%@=%@",key,value];
+            }
+        }
+        self.request.HTTPBody = [parametersString dataUsingEncoding:NSUTF8StringEncoding];
     }
     NSURLSession *session = [NSURLSession sharedSession];
     [[session dataTaskWithRequest:self.request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
@@ -86,7 +98,6 @@ static LSNetworking *instance = nil;
         } else {
             //解析数据
             NSError *error;
-            NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
             NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
             if (error) {
                 self.failure(error);
