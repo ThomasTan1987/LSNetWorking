@@ -92,19 +92,20 @@ static LSNetworking *instance = nil;
     }
     NSURLSession *session = [NSURLSession sharedSession];
     [[session dataTaskWithRequest:self.request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        //note:is not in main thread
-        if (error) {
-            self.failure(error);
-        } else {
-            //解析数据
-            NSError *error;
-            NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+        dispatch_async(dispatch_get_main_queue(), ^{
             if (error) {
                 self.failure(error);
-            }else{
-                self.success(dic);
+            } else {
+                //解析数据
+                NSError *error;
+                NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+                if (error) {
+                    self.failure(error);
+                }else{
+                    self.success(dic);
+                }
             }
-        }
+        });
     }] resume];
 }
 @end
