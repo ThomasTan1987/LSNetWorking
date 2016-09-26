@@ -44,17 +44,31 @@
         request.URL = [NSURL URLWithString:finalURLString];
         request.HTTPMethod = self.requestMethod;
         
-        NSMutableString *parametersString = [[NSMutableString alloc] init];
-        for (int i=0; i<self.param.allKeys.count; i++) {
-            NSString *key = self.param.allKeys[i];
-            NSString *value = self.param[key];
-            if (i == 0) {
-                [parametersString appendFormat:@"%@=%@",key,value];
-            }else{
-                [parametersString appendFormat:@"&%@=%@",key,value];
+        if (self.dotNet) {
+            [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+            if (self.param[@"token"]) {
+                [request setValue:self.param[@"token"] forHTTPHeaderField:@"token"];
             }
+            NSError *error;
+            NSData *data = [NSJSONSerialization dataWithJSONObject:self.param options:0 error:&error];
+            if (data) {
+                request.HTTPBody = data;
+            } else {
+                return;
+            }
+        } else {
+            NSMutableString *parametersString = [[NSMutableString alloc] init];
+            for (int i=0; i<self.param.allKeys.count; i++) {
+                NSString *key = self.param.allKeys[i];
+                NSString *value = self.param[key];
+                if (i == 0) {
+                    [parametersString appendFormat:@"%@=%@",key,value];
+                }else{
+                    [parametersString appendFormat:@"&%@=%@",key,value];
+                }
+            }
+            request.HTTPBody = [parametersString dataUsingEncoding:NSUTF8StringEncoding];
         }
-        request.HTTPBody = [parametersString dataUsingEncoding:NSUTF8StringEncoding];
     }
     NSURLSession *session = [NSURLSession sharedSession];
     [[session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {

@@ -16,4 +16,8 @@ typedef void(^FAILURE)(NSError *error);
 @property(nonatomic, strong)FAILURE failure;
 @property(nonatomic, copy)NSString *strURL;
 @property(nonatomic, strong)NSDictionary *param;
+//是否为.net接口，.net接口的处理方式不一样，所以必须分开处理
+//1.token放head里
+//2.参数用json方式
+@property (nonatomic, assign) BOOL dotNet;
 @end

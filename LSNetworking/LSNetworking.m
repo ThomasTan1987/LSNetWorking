@@ -8,12 +8,14 @@
 
 #import "LSNetworking.h"
 #import "LSHttpRequestOperation.h"
+#import "LSUploadRequestOperation.h"
 @interface LSNetworking()
 @property(nonatomic,strong)NSOperationQueue *queue;
+@property (nonatomic,strong)NSDictionary *api;
 @end
 @implementation LSNetworking
 static LSNetworking *instance = nil;
-+ (LSNetworking* )sharedNetworking
++ (id)sharedNetworking
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -38,26 +40,42 @@ static LSNetworking *instance = nil;
     return [super alloc];
 }
 #pragma mark -
-- (void)GET:(NSString *)URLString parameters:(NSDictionary *)parameters success:(SUCCESS)success failure:(FAILURE)failure
+- (void)get:(NSString *)URLString parameters:(NSDictionary *)parameters success:(SUCCESS)success failure:(FAILURE)failure
 {
-    //
+    [self get:URLString parameters:parameters dotNet:NO success:success failure:failure];
+}
+- (void)post:(NSString *)URLString parameters:(NSDictionary *)parameters success:(SUCCESS)success failure:(FAILURE)failure
+{
+    [self post:URLString parameters:parameters dotNet:NO success:success failure:failure];
+}
+- (void)get:(NSString *)URLString parameters:(NSDictionary *)parameters dotNet:(BOOL)dotNet success:(SUCCESS)success failure:(FAILURE)failure
+{
+    [self addRequestOperation:URLString method:@"GET" parameters:parameters dotNet:dotNet success:success failure:failure];
+}
+- (void)post:(NSString *)URLString parameters:(NSDictionary *)parameters dotNet:(BOOL)dotNet success:(SUCCESS)success failure:(FAILURE)failure
+{
+    [self addRequestOperation:URLString method:@"POST" parameters:parameters dotNet:dotNet success:success failure:failure];
+}
+- (void)addRequestOperation:(NSString *)URLString method:(NSString*)method parameters:(NSDictionary *)parameters dotNet:(BOOL)dotNet success:(SUCCESS)success failure:(FAILURE)failure
+{
     LSHttpRequestOperation *requestOperation = [[LSHttpRequestOperation alloc] init];
-    requestOperation.requestMethod = @"GET";
+    requestOperation.dotNet = dotNet;
+    requestOperation.requestMethod = method;
     requestOperation.success = success;
     requestOperation.failure = failure;
     requestOperation.strURL = URLString;
     requestOperation.param = parameters;
     [self.queue addOperation:requestOperation];
-    
 }
-- (void)POST:(NSString *)URLString parameters:(NSDictionary *)parameters success:(SUCCESS)success failure:(FAILURE)failure
+- (void)upload:(NSString *)URLString postData:(NSData *)postData fileName:(NSString*)fileName contentType:(NSString*)contentType success:(SUCCESS)success failure:(FAILURE)failure
 {
-    LSHttpRequestOperation *requestOperation = [[LSHttpRequestOperation alloc] init];
-    requestOperation.requestMethod = @"POST";
-    requestOperation.success = success;
-    requestOperation.failure = failure;
-    requestOperation.strURL = URLString;
-    requestOperation.param = parameters;
+    LSUploadRequestOperation *requestOperation = [[LSUploadRequestOperation alloc] init];
+//    requestOperation.success = success;
+//    requestOperation.failure = failure;
+//    requestOperation.strURL = URLString;
+//    requestOperation.postData = postData;
+//    requestOperation.fileName = fileName;
+//    requestOperation.contentType = contentType;
     [self.queue addOperation:requestOperation];
 }
 @end
