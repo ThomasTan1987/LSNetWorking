@@ -67,15 +67,16 @@ static LSNetworking *instance = nil;
     requestOperation.param = parameters;
     [self.queue addOperation:requestOperation];
 }
-- (void)upload:(NSString *)URLString postData:(NSData *)postData fileName:(NSString*)fileName contentType:(NSString*)contentType success:(SUCCESS)success failure:(FAILURE)failure
+- (void)upload:(NSString *)URLString headField:(NSDictionary *)headField postData:(NSData *)postData fileName:(NSString*)fileName contentType:(NSString*)contentType success:(SUCCESS)success failure:(FAILURE)failure
 {
     LSUploadRequestOperation *requestOperation = [[LSUploadRequestOperation alloc] init];
-//    requestOperation.success = success;
-//    requestOperation.failure = failure;
-//    requestOperation.strURL = URLString;
-//    requestOperation.postData = postData;
-//    requestOperation.fileName = fileName;
-//    requestOperation.contentType = contentType;
+    requestOperation.success = success;
+    requestOperation.failure = failure;
+    requestOperation.strURL = URLString;
+    requestOperation.postData = postData;
+    requestOperation.fileName = fileName;
+    requestOperation.contentType = contentType;
+    requestOperation.headField = headField;
     [self.queue addOperation:requestOperation];
 }
 @end

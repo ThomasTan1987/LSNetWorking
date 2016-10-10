@@ -15,5 +15,5 @@ typedef void(^FAILURE)(NSError *error);
 - (void)post:(NSString *)URLString parameters:(NSDictionary *)parameters success:(SUCCESS)success failure:(FAILURE)failure;
 - (void)get:(NSString *)URLString parameters:(NSDictionary *)parameters dotNet:(BOOL)dotNet success:(SUCCESS)success failure:(FAILURE)failure;
 - (void)post:(NSString *)URLString parameters:(NSDictionary *)parameters dotNet:(BOOL)dotNet success:(SUCCESS)success failure:(FAILURE)failure;
-- (void)upload:(NSString *)URLString postData:(NSData *)postData fileName:(NSString*)fileName contentType:(NSString*)contentType success:(SUCCESS)success failure:(FAILURE)failure;
+- (void)upload:(NSString *)URLString headField:(NSDictionary *)headField postData:(NSData *)postData fileName:(NSString*)fileName contentType:(NSString*)contentType success:(SUCCESS)success failure:(FAILURE)failure;
 @end
