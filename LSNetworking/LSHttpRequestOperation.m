@@ -46,15 +46,15 @@
         
         if (self.dotNet) {
             [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-            if (self.param[@"token"]) {
-                [request setValue:self.param[@"token"] forHTTPHeaderField:@"token"];
-            }
-            NSError *error;
-            NSData *data = [NSJSONSerialization dataWithJSONObject:self.param options:0 error:&error];
-            if (data) {
-                request.HTTPBody = data;
-            } else {
-                return;
+            if (self.param) {
+                if (self.param[@"token"]) {
+                    [request setValue:self.param[@"token"] forHTTPHeaderField:@"token"];
+                }
+                NSError *error;
+                NSData *data = [NSJSONSerialization dataWithJSONObject:self.param options:0 error:&error];
+                if (data) {
+                    request.HTTPBody = data;
+                }
             }
         } else {
             NSMutableString *parametersString = [[NSMutableString alloc] init];
