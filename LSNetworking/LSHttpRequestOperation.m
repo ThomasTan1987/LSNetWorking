@@ -13,7 +13,7 @@
 - (void)main
 {
     NSString *finalURLString;
-    if ([self.strURL hasPrefix:@"http://"]) {
+    if ([self.strURL hasPrefix:@"http://"]||[self.strURL hasPrefix:@"https://"]) {
         finalURLString = self.strURL;
     }else{
         finalURLString = [NSString stringWithFormat:@"http://%@",self.strURL];
