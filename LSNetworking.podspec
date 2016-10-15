@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LSNetworking'
-  s.version          = '0.2.7'
+  s.version          = '0.2.8'
   s.summary          = '对NSURLSession的一个简单封装'
 
 # This description is used to generate tags and improve search results.
@@ -38,5 +38,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'TTLog', '~> 0.2.0'
 end

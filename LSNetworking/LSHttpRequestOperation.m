@@ -7,6 +7,7 @@
 //
 
 #import "LSHttpRequestOperation.h"
+#import <TTLog/TTLog.h>
 @interface LSHttpRequestOperation()
 @end
 @implementation LSHttpRequestOperation
@@ -70,18 +71,22 @@
             request.HTTPBody = [parametersString dataUsingEncoding:NSUTF8StringEncoding];
         }
     }
+    LOG(@"请求：%@，参数：%@",finalURLString,self.param);
     NSURLSession *session = [NSURLSession sharedSession];
     [[session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         dispatch_async(dispatch_get_main_queue(), ^{
             if (error) {
                 self.failure(error);
+                LOG(@"请求失败：%@",error);
             } else {
                 //解析数据
                 NSError *error;
                 NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
                 if (error) {
+                    LOG(@"请求失败：%@",error);
                     self.failure(error);
                 }else{
+                    LOG(@"请求成功：%@",dic);
                     self.success(dic);
                 }
             }

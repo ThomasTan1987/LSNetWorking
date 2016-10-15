@@ -7,4 +7,5 @@ target 'LSNetworking' do
 
   # Pods for LSNetworking
   pod 'LSNetworking', :path => '../'
+  pod 'TTLog', '~> 0.2.0'
 end

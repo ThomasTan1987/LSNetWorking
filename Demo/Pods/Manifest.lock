@@ -1,16 +1,20 @@
 PODS:
-  - LSNetworking (0.1.0)
+  - LSNetworking (0.2.8):
+    - TTLog (~> 0.2.0)
+  - TTLog (0.2.0)
 
 DEPENDENCIES:
   - LSNetworking (from `../`)
+  - TTLog (~> 0.2.0)
 
 EXTERNAL SOURCES:
   LSNetworking:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LSNetworking: c0f9d5630704bfbef9469e5b1d6d94effd5ea408
+  LSNetworking: f29885d6910581ad798cb4358617837440311bd6
+  TTLog: fd6f7c56814bc01b271b00db30a11a67dd8a0c9d
 
-PODFILE CHECKSUM: 81ea3a2c9ddc3533cf15ac2586d82592ca16c450
+PODFILE CHECKSUM: e601aee67de61f68ef357e59eb7e75399aa811c0
 
 COCOAPODS: 1.0.1
